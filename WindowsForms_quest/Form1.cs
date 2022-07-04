@@ -16,5 +16,14 @@ namespace WindowsForms_quest
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.hero1;
+            pictureBox2.Image = Properties.Resources.hero2;
+            pictureBox3.Image = Properties.Resources.hero3;
+            pictureBox4.Image = Properties.Resources.hero4;
+            pictureBox5.Image = Properties.Resources.hero5;
+        }
     }
 }
