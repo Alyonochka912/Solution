@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
+//using WindowsForms_quest;
 
-namespace ClassLibrary_hero
+namespace WindowsForms_quest
 {
     public class Hero
     {
-        //public Color BackColor { get; set; } = Color.Blue;
-        //public Point Location { get; set; }
-        //public Size Size { get; set; } = new Size(30, 30);
+        
     }
 }

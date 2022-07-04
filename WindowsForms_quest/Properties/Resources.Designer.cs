@@ -123,16 +123,6 @@ namespace WindowsForms_quest.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap neighbor1 {
-            get {
-                object obj = ResourceManager.GetObject("neighbor1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap neighbor2 {
             get {
                 object obj = ResourceManager.GetObject("neighbor2", resourceCulture);
