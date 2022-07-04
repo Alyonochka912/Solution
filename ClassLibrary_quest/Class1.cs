@@ -8,5 +8,6 @@ namespace ClassLibrary_quest
 {
     public class Class1
     {
+        
     }
 }
