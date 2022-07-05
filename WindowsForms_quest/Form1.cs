@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary_quest;
 
 namespace WindowsForms_quest
 {
     
     public partial class Form1 : Form
     {
-        //Всё точно работает!!!!
         private Hero Hero = new Hero();
+        private int step_index = 0;
+        private int step_count = 0;
+        private Controller Controller = new Controller();
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +40,17 @@ namespace WindowsForms_quest
             label2.Visible = false;
             
         }
-
+        private void ShowText_life()
+        {
+            textBox1.Text = Controller.life[step_index];
+            step_index++;
+            step_count++;
+        }
+        private void ShowText_death()
+        {
+            textBox1.Text = Controller.death[step_index];
+            
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -45,6 +58,7 @@ namespace WindowsForms_quest
             Hero.y = 250;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
+            ShowText_life();
 
         }
 
@@ -54,6 +68,7 @@ namespace WindowsForms_quest
             Hero.x = 20;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
+            ShowText_life();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -62,7 +77,7 @@ namespace WindowsForms_quest
             Hero.y = 20;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
-            
+            ShowText_life();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -71,42 +86,50 @@ namespace WindowsForms_quest
             Hero.x = 260;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
+            ShowText_life();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             label1.Visible = true;
+            ShowText_life();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            ShowText_death();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            ShowText_death();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            ShowText_death();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            ShowText_death();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            ShowText_death();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
+            textBox1.Text = Controller.texts[0];
         }
     }
     internal class Hero
@@ -118,7 +141,8 @@ namespace WindowsForms_quest
         {
             x = 260;
             y = 510;
-            width = height = 30;
+            width = 60;
+            height = 80;
             cColor = Color.Black;
             bColor = Color.White;
         }
@@ -134,11 +158,7 @@ namespace WindowsForms_quest
         }
         public void Draw(Graphics gr)
         {
-            Pen pn = new Pen(cColor, 5);
-            Brush br = new SolidBrush(bColor);
-
-            gr.FillEllipse(br, x, y, width, height);
-            gr.DrawEllipse(pn, x, y, width, height);
+            gr.DrawImage(Properties.Resources.quest10, x, y, width, height);
         }
         
         
