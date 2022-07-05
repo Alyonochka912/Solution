@@ -13,17 +13,12 @@ namespace WindowsForms_quest
     
     public partial class Form1 : Form
     {
-        //private Bitmap canvaslight;
-        //private Bitmap canvasHero;
-        //private Graphics graphicsHero;
+
         private Hero Hero = new Hero();
         public Form1()
         {
             InitializeComponent();
-            //canvaslight = new Bitmap(pictureBox10.Width, pictureBox10.Height);
-            //canvasHero = new Bitmap(pictureBox10.Width, pictureBox10.Height);
-            //graphicsHero = Graphics.FromImage(canvasHero);
-            //pictureBox10.Image = canvasHero;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -145,7 +140,7 @@ namespace WindowsForms_quest
             gr.FillEllipse(br, x, y, width, height);
             gr.DrawEllipse(pn, x, y, width, height);
         }
-
+        // всё работает!!
         
     }
     
