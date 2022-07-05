@@ -140,7 +140,7 @@ namespace WindowsForms_quest
             gr.FillEllipse(br, x, y, width, height);
             gr.DrawEllipse(pn, x, y, width, height);
         }
-
+        // всё работает!!
         
     }
     
