@@ -13,7 +13,7 @@ namespace WindowsForms_quest
     
     public partial class Form1 : Form
     {
-        //Всё точно работает!
+        //Всё точно работает!!!
         private Hero Hero = new Hero();
         public Form1()
         {
