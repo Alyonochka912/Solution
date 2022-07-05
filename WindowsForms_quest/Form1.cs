@@ -13,7 +13,7 @@ namespace WindowsForms_quest
     
     public partial class Form1 : Form
     {
-
+        //Всё точно работает!
         private Hero Hero = new Hero();
         public Form1()
         {
@@ -140,7 +140,7 @@ namespace WindowsForms_quest
             gr.FillEllipse(br, x, y, width, height);
             gr.DrawEllipse(pn, x, y, width, height);
         }
-        // всё работает!!
+        
         
     }
     
