@@ -51,11 +51,6 @@ namespace WindowsForms_quest
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
 
-            //Hero.Create(graphicsHero);
-            //Hero.Move1();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -64,10 +59,6 @@ namespace WindowsForms_quest
             Hero.x = 20;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
-            //Hero.Create(graphicsHero);
-            //Hero.Move2();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -76,10 +67,7 @@ namespace WindowsForms_quest
             Hero.y = 20;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
-            //Hero.Create(graphicsHero);
-            //Hero.Move3();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -88,10 +76,6 @@ namespace WindowsForms_quest
             Hero.x = 260;
             Graphics g = pictureBox10.CreateGraphics();
             Hero.Draw(g);
-            //Hero.Create(graphicsHero);
-            //Hero.Move4();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -101,46 +85,26 @@ namespace WindowsForms_quest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Hero.Create(graphicsHero);
-            //Hero.Move5();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
             label2.Visible = true;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //Hero.Create(graphicsHero);
-            //Hero.Move5();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
             label2.Visible = true;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //Hero.Create(graphicsHero);
-            //Hero.Move5();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
             label2.Visible = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Hero.Create(graphicsHero);
-            //Hero.Move5();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
             label2.Visible = true;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            //Hero.Create(graphicsHero);
-            //Hero.Move5();
-            //Hero.Draw();
-            //pictureBox10.Invalidate();
             label2.Visible = true;
         }
 
@@ -182,41 +146,7 @@ namespace WindowsForms_quest
             gr.DrawEllipse(pn, x, y, width, height);
         }
 
-        //internal Color BackColor { get; set; } = Color.Blue;
-        //internal Point Location { get; set; } = new Point(843, 794);
-        //internal Size Size { get; set; } = new Size(300, 300);
-
-        //internal Graphics graphics;
-        //internal void Create(Graphics graphics)
-        //{
-        //    this.graphics = graphics;
-        //}
-        //internal void Draw()
-        //{
-        //    graphics.Clear(Color.White);
-        //    graphics.FillEllipse(new SolidBrush(BackColor),
-        //          new Rectangle(Location, Size));
-        //}
-        //internal void Move1()
-        //{
-        //    Location = new Point(Location.X, Location.Y - 331);
-        //}
-        //internal void Move2()
-        //{
-        //    Location = new Point(Location.X - 100, Location.Y);
-        //}
-        //internal void Move3()
-        //{
-        //    Location = new Point(Location.X, Location.Y - 331);
-        //}
-        //internal void Move4()
-        //{
-        //    Location = new Point(Location.X + 100, Location.Y);
-        //}
-        //internal void Move5()
-        //{
-        //    Location = new Point(843, 794);
-        //}
+        
     }
     
 }
