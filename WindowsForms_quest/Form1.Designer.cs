@@ -258,24 +258,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(162, 309);
+            this.label1.Location = new System.Drawing.Point(79, 294);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1218, 106);
+            this.label1.Size = new System.Drawing.Size(1387, 84);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Ты Победил! Поздравляем!";
+            this.label1.Text = "Вау! Супер! Теперь ты познакомился со всеми соседями, и у тебя много друзей!\r\n   " +
+    "                                                 P.s: ты продул в покер))";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(208, 323);
+            this.label2.Location = new System.Drawing.Point(40, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1116, 106);
+            this.label2.Size = new System.Drawing.Size(1446, 66);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Ты Проиграл! Game over!";
+            this.label2.Text = "Упс.. Не судьба! Так и будешь утопать в одиночестве!";
             // 
             // button11
             // 

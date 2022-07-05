@@ -136,25 +136,20 @@ namespace WindowsForms_quest
     {
         public int x, y;
         public int width, height;
-        public Color bColor, cColor;
         public Hero()
         {
             x = 260;
             y = 510;
             width = 60;
             height = 80;
-            cColor = Color.Black;
-            bColor = Color.White;
         }
 
-        public Hero(int xx, int yy, int w, int hm, Color cc, Color bc)
+        public Hero(int xx, int yy, int w, int hm)
         {
             x = xx;
             y = yy;
             width = w;
             height = hm;
-            cColor = cc;
-            bColor = bc;
         }
         public void Draw(Graphics gr)
         {
