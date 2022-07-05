@@ -11,6 +11,7 @@ namespace Console_quest
     {
         static void Main(string[] args)
         {
+            int count = 0;
             Controller controller = new Controller();
             for (int i = 0; i < controller.texts.Length; i++)
             {
@@ -18,12 +19,19 @@ namespace Console_quest
                 if (Convert.ToInt32(Console.ReadLine()) != controller.answers[i])
                 {
                     Console.WriteLine(controller.death[i]);
+                    Console.WriteLine("Упс.. Не судьба! Так и будешь утопать в одиночестве!");
                     break;
                 }
                 else
                 {
+                    count++;
                     Console.WriteLine(controller.life[i]);
-
+                    if(count == controller.answers.Length)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("Вау! Супер! Теперь ты познакомился со всеми соседями, и у тебя много друзей!");
+                        Console.WriteLine("P.s: ты продул в покер))");
+                    }
                 }
             }
 
